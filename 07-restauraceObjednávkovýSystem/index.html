@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Restaurace- Objednávka</title>
+</head>
+
+<body>
+    <h2>Utvořte objednávku</h2>
+
+    <form id="orderForm">
+    <div id="chicken">
+        <input type="checkbox" 
+        id="honeyChicken"
+        name="honeyChicken"
+        data-name="Honey chicken"
+        data-price="195"
+        />
+        <img src="kureNaMedu.jpg" alt="kure" width="95" height="95">
+        <label for="honeyChicken">Kuře na medu 195 Kč</label>
+        <input type="number" name="honeyChicken_count" id="platesHoneyChicken" placeholder="porce" disabled>
+    </div>
+
+    <div id="pho">
+        <input type="checkbox" 
+        id="phoBo"
+        name="phoBo"
+        data-name="Pho Bo"
+        data-price="210"
+        />
+        <img src="phoBo.jpg" width="95" height="95">
+        <label for="phoBo">Pho Bo polévka 210 Kč</label>
+        <input type="number" name="phoBo_count" id="platesPhoBo" placeholder="porce" disabled>
+    </div>
+
+    <div id="noodle">
+        <input type="checkbox" 
+        id="noodles"
+        name="noodles"
+        data-name="Fried noodles"
+        data-price="149"
+        />
+        <img src="smaženéNudle.jpg" width="95" height="95">
+        <label for="noodles">Smažené nudle 149 Kč</label>
+        <input type="number" name="noodles_count" id="platesNoodles" placeholder="porce" disabled>
+    </div>
+
+    <div id="steakPotato">
+        <input type="checkbox" 
+        id="steak"
+        name="steak"
+        data-name="Steak"
+        data-price="259"
+        />
+        <img src="steakSBramborem.jpg" width="95" height="95">
+        <label for="steak">Hovězí steak s bramborem 259 Kč</label>
+        <input type="number" name="steak_count" id="platesSteak" placeholder="porce" disabled>
+    </div>
+
+    <div id="goulashDish">
+        <input type="checkbox" 
+        id="goulash"
+        name="goulash"
+        data-name="Goulash"
+        data-price="229"
+        />
+        <img src="guláš.jpg" width="95" height="95">
+        <label for="goulash">Guláš s knedlíkem 229 Kč</label>
+        <input type="number" name="goulash_count" id="platesGoulash" placeholder="porce" disabled>
+    </div>
+       
+    <div id="breadEgg">
+        <input type="checkbox" 
+        id="bread"
+        name="bread"
+        data-name="Bread"
+        data-price="65"
+        />
+        <img src="chlebaVeVajíčku.jpg" width="95" height="95">
+        <label for="bread">Chleba ve vajíčku 65 Kč</label>
+        <input type="number" name="bread_count" id="platesBread" placeholder="porce" disabled>
+    </div>
+        <input type="submit" value="Odeslat objednávku"></input>
+    </form>
+
+    <hr/>
+
+    <div id="container" hidden>
+        <a id="List"></a>
+        <a id="totalPrice"></a>
+        <button id="sendOrder" onclick="sendOrder()">Dokončit objednávku</button>
+    </div>
+
+    <a id="thanks" hidden></a>
+
+    <script src="script2.js" defer></script>
+</body>
+</html>

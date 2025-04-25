@@ -1,0 +1,114 @@
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgba(105, 2, 47, 0.595);
+}
+
+form {
+    max-width: 80%;
+    margin: auto;
+    padding: 5%;
+    background-color:  rgba(255, 0, 111, 0.186);
+    box-sizing: border-box;
+    border-radius: 25px;
+    
+}
+
+label {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+input[type="submit"]{
+    transition: all 1s;
+    border-style: none;
+    background-color: #107a277d;
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 0px 0px 5px 5px rgb(41, 41, 41);
+}
+input[type="submit"]:hover
+{
+    transition: all 1s;
+    background-color: rgba(255, 0, 111, 0.415);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 7px 7px gray;
+}
+
+input[type="checkbox"] {
+    margin: 5px;
+    margin-top: 10px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 2px #4608227d;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #107a277d;
+  }
+
+input[type="number"] {
+    margin: 2px 10px 2px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 60px;
+    background-color: #fbfbfbd7;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 3px 3px 3px 3px #4608227d;
+    cursor: pointer;
+    padding: 5px;
+}
+
+div[id="container"] {
+    text-align: center;
+}
+
+a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+button[type="submit"] {
+    font-weight: bold;
+    margin: auto;
+    margin-top: 40px;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 8px;
+    background-color: #fbfbfbd7;
+    box-shadow: 3px 3px 3px 3px #4608227d;
+    cursor: pointer;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    form {
+        width: 95%;
+    }
+
+    .menu-item {
+        flex-direction: column; /* Na mobilech se jídla zobrazí pod sebou */
+        text-align: center;
+    }
+
+    .menu-item img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 5px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+}
